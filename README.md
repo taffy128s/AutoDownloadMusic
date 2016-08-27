@@ -1,7 +1,7 @@
 # AutoDownloadMusic
 
 [Requirements]
--Python 2.7
+-Python 2.7.10
 -Selenium google chrome driver
 -Google Chrome
 
