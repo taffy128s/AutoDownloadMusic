@@ -9,7 +9,7 @@ with open('song_list') as f:
     song_list = f.readlines()
 
 for song in song_list:
-    googleDriver = webdriver.Chrome()
+    googleDriver = webdriver.Firefox(executable_path = '/Users/taffy128s/Documents/geckodriver')
     googleDriver.get('https://www.google.com#q=' + song)
     link = ''
     count = 0
@@ -23,7 +23,7 @@ for song in song_list:
             pass
     googleDriver.close()
 
-    converterDriver = webdriver.Chrome()
+    converterDriver = webdriver.Firefox(executable_path = '/Users/taffy128s/Documents/geckodriver')
     converterDriver.get('http://www.youtube-mp3.org/')
     element = converterDriver.find_element_by_id('youtube-url')
     element.clear()

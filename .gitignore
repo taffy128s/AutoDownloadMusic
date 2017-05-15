@@ -1,3 +1,4 @@
 *.mp3
 .DS_STORE
-
+song_list
+geckodriver.log
